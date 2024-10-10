@@ -1,7 +1,7 @@
 #txt2img_container_aspect_ratio,
 #img2img_container_aspect_ratio {
 	gap: 10px !important;
-	margin: 0px;
+	margin: 4px;
 	margin-top: 6px;
 	margin-bottom: 6px;
 	padding: 0px;  
@@ -16,9 +16,7 @@
 }
 
 #txt2img_row_aspect_ratio button,
-#txt2img_row_resolutions button,
-#img2img_row_aspect_ratio button,
-#img2img_row_resolutions button {
+#img2img_row_aspect_ratio button {
 	margin: 0px;
 	gap: 10px !important;
 	max-width: unset !important;
