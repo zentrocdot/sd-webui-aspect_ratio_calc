@@ -72,7 +72,7 @@ class AspectRatioScript(scripts.Script):
             # Create an InputAccordion.
             with InputAccordion(
                 label="Aspect Ratio Calculator",
-                elem_id=f'{"img" if is_img2img else "txt"}2img_container_aspect_ratio',
+                elem_id=f'{"img" if is_img2img else "txt"}2img_container1_aspect_ratio',
                 value=False
             ) as enabled:
                 # Create a row.
