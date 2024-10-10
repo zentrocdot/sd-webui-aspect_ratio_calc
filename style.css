@@ -8,6 +8,16 @@
 	padding: 6px;  
 }
 
+#txt2img_container1_aspect_ratio,
+#img2img_container1_aspect_ratio {
+	gap: 10px !important;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	margin-left: 6px;
+	margin-right: 6px;
+	padding: 6px;  
+}
+
 #txt2img_row_aspect_ratio,
 #img2img_row_aspect_ratio {
 	margin-top: 6px;
