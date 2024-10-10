@@ -17,6 +17,15 @@ import modules.scripts as scripts
 import contextlib
 from modules.ui_components import InputAccordion
 
+# Set global variable pecision.
+_prec = 2
+
+# Define function 
+def update_prec(prec):
+    global _prec
+    _prec = int(prec)
+    return prec
+
 # Function update_number()
 def update_number(x,y):
     '''Helper function update number.'''
@@ -64,10 +73,15 @@ class AspectRatioScript(scripts.Script):
                 elem_id=f'{"img" if is_img2img else "txt"}2img_row_aspect_ratio',
                 value=False
             ) as enabled:
-                arvalue = gr.Textbox(value=update_number(512,512), lines=1,
-                    interactive=False, inputs=None,
-                    label="Calculated aspect ratio from Width/Height"
-                )
+                # Create a row.
+                with gr.Row(
+                    elem_id=f'{"img" if is_img2img else "txt"}2img_container_aspect_ratio'
+                ): 
+                    arvalue = gr.Textbox(value=update_number(512,512), lines=1,
+                        interactive=False, inputs=None,
+                        label="Calculated aspect ratio from Width/Height"
+                    )
+                    prec = gr.Dropdown([0,1,2,3,4,5,6,7,8], label="Precision", value="2")
                 # Create a row.
                 with gr.Row(
                     elem_id=f'{"img" if is_img2img else "txt"}2img_container_aspect_ratio'
@@ -78,6 +92,7 @@ class AspectRatioScript(scripts.Script):
                     mybutton = gr.Button("Calculate Aspect Ratio")
                     with contextlib.suppress(AttributeError):
                         #imgres = self.image_resolution(is_img2img)
+                        prec.input(update_prec, inputs=[prec], outputs=[prec])
                         mybutton.click(update_number, inputs=[wentry, hentry], outputs=arvalue)
 
     # Class method after_component.
