@@ -3,9 +3,9 @@
 	gap: 10px !important;
 	margin-top: 6px;
 	margin-bottom: 6px;
-	margin-left: 6px;
+	margin-left: 0px;
 	margin-right: 6px;
-	padding: 0px;  
+	padding: 6px;  
 }
 
 #txt2img_row_aspect_ratio,
