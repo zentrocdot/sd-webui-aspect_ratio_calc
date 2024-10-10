@@ -31,11 +31,13 @@ def update_number(x,y):
     '''Helper function update number.'''
     if x > y:
         z = x/y
+        z = round(z, _prec)
         if float(z).is_integer():
             z = int(z)
         ret = str(z) + ":1"
     elif x <= y:
         z = y/x
+        z = round(z, _prec)
         if float(z).is_integer():
             z = int(z)
         ret = "1:" + str(z)
