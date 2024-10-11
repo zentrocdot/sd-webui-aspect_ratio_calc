@@ -65,31 +65,25 @@ class AspectRatioScript(scripts.Script):
 
     def ui(self, is_img2img):
         '''Class method ui.'''
-        # Create a column.
+        # Set the format strings.
+        layout0 = f'{"img" if is_img2img else "txt"}2img_container0_aspect_ratio'
         layout1 = f'{"img" if is_img2img else "txt"}2img_container1_aspect_ratio'
-        with gr.Column(
-            elem_id=f'{"img" if is_img2img else "txt"}2img_container_aspect_ratio'
-        ):
+        layout2 = f'{"img" if is_img2img else "txt"}2img_row_aspect_ratio'
+        # Create a column.
+        with gr.Column(elem_id=layout0):
             # Create an InputAccordion.
-            with InputAccordion(
-                label="Aspect Ratio Calculator",
-                elem_id=layout1,
-                #elem_id=f'{"img" if is_img2img else "txt"}2img_container1_aspect_ratio',
-                value=False
+            with InputAccordion(label="Aspect Ratio Calculator",
+                elem_id=layout1, value=False
             ) as enabled:
                 # Create a row.
-                with gr.Row(
-                    elem_id=f'{"img" if is_img2img else "txt"}2img_row_aspect_ratio'
-                ): 
+                with gr.Row(elem_id=layout2): 
                     arvalue = gr.Textbox(value=update_number(512,512), lines=1,
                         interactive=False, inputs=None,
                         label="Calculated aspect ratio from Width/Height"
                     )
                     prec = gr.Dropdown([0,1,2,3,4,5,6,7,8], label="Precision", value="2")
                 # Create a row.
-                with gr.Row(
-                    elem_id=f'{"img" if is_img2img else "txt"}2img_row_aspect_ratio'
-                ):
+                with gr.Row(elem_id=layout2):
                     # Create two numeric fields and one button.
                     wentry = gr.Number(label="Width", interactive=True)
                     hentry = gr.Number(label="Height", interactive=True)
