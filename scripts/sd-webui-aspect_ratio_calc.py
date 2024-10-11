@@ -92,6 +92,9 @@ class AspectRatioScript(scripts.Script):
                         #imgres = self.image_resolution(is_img2img)
                         prec.input(update_prec, inputs=[prec], outputs=[prec])
                         mybutton.click(update_number, inputs=[wentry, hentry], outputs=arvalue)
+                        def init(x):
+                            return "1:1"
+                        arvalue.Focus(init, inputs=[arvalue], outputs=[arvalues])
 
     # Class method after_component.
     def after_component(self, component, **kwargs):
