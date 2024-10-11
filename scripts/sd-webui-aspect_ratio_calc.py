@@ -17,10 +17,10 @@ import modules.scripts as scripts
 import contextlib
 from modules.ui_components import InputAccordion
 
-# Set global variable pecision.
+# Set global private variable pecision.
 _prec = 2
 
-# Define function 
+# Define function update precision.
 def update_prec(prec):
     global _prec
     _prec = int(prec)
@@ -77,7 +77,7 @@ class AspectRatioScript(scripts.Script):
             ) as enabled:
                 # Create a row.
                 with gr.Row(elem_id=layout2): 
-                    arvalue = gr.Textbox(value=update_number(512,512), lines=1,
+                    arvalue = gr.Textbox(value="1:1", lines=1,
                         interactive=False, inputs=None,
                         label="Calculated aspect ratio from Width/Height"
                     )
