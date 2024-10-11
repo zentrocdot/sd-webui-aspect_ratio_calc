@@ -77,7 +77,7 @@ class AspectRatioScript(scripts.Script):
             ) as enabled:
                 # Create a row.
                 with gr.Row(elem_id=layout2): 
-                    arvalue = gr.Textbox(value="1:1", lines=1, render=False,
+                    arvalue = gr.Textbox(value="1:1", lines=1, render=True,
                         interactive=False, inputs=None,
                         label="Calculated aspect ratio from Width/Height"
                     )
