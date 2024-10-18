@@ -44,7 +44,7 @@ def update_number(x,y):
     return str(ret)
 
 # Define class AspectRatioScript.
-class AspectRatioScript(scripts.Script):
+class AspectRatioCalcScript(scripts.Script):
     '''Class for calculating the aspect ratio.'''
 
     def title(self):
