@@ -88,8 +88,8 @@ class AspectRatioCalcScript(scripts.Script):
                     # Create two numeric fields and one button.
                     wentry = gr.Number(label="Width", interactive=True)
                     hentry = gr.Number(label="Height", interactive=True)
-                    mybutton0 = gr.Button("Calculate AR", elem_id=layout3)
-                    mybutton1 = gr.Button("Acquire W/H", elem_id=layout3) 
+                    mybutton0 = gr.Button("Calculate AR", elem_id=layout3, min_width=50)
+                    mybutton1 = gr.Button("Acquire W/H", elem_id=layout3, min_width=50) 
                     with contextlib.suppress(AttributeError):
                         imgres = self.image_resolution(is_img2img)
                         prec.input(update_prec, inputs=[prec], outputs=[prec])
