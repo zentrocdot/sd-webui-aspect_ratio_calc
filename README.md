@@ -7,7 +7,7 @@
 
 # Preface
 
-to-do ...
+This is the penultimate extension I am programming, as I need the implemented function on a daily basis.
 
 ## What the Extension Does
 
