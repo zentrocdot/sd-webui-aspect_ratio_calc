@@ -69,6 +69,7 @@ class AspectRatioCalcScript(scripts.Script):
         layout0 = f'{"img" if is_img2img else "txt"}2img_accordion_aspect_ratio_calc'
         layout1 = f'{"img" if is_img2img else "txt"}2img_column_aspect_ratio_calc'
         layout2 = f'{"img" if is_img2img else "txt"}2img_row_aspect_ratio_calc'
+        layout3 = f'{"img" if is_img2img else "txt"}2img_btn_aspect_ratio_calc'
         # Create a column.
         with gr.Column(elem_id=layout1):
             # Create an InputAccordion.
@@ -87,8 +88,8 @@ class AspectRatioCalcScript(scripts.Script):
                     # Create two numeric fields and one button.
                     wentry = gr.Number(label="Width", interactive=True)
                     hentry = gr.Number(label="Height", interactive=True)
-                    mybutton0 = gr.Button("Calculate AR")
-                    mybutton1 = gr.Button("Acquire W/H") 
+                    mybutton0 = gr.Button("Calculate AR", elem_id=layout3)
+                    mybutton1 = gr.Button("Acquire W/H", elem_id=layout3) 
                     with contextlib.suppress(AttributeError):
                         imgres = self.image_resolution(is_img2img)
                         prec.input(update_prec, inputs=[prec], outputs=[prec])
