@@ -1,7 +1,7 @@
 '''sd-webui-aspect_ratio_calc
 Extension for AUTOMATIC1111.
 
-Version 0.0.0.1
+Version 0.0.0.2
 '''
 # pylint: disable=import-error
 # pylint: disable=consider-using-from-import
@@ -66,9 +66,9 @@ class AspectRatioCalcScript(scripts.Script):
     def ui(self, is_img2img):
         '''Class method ui.'''
         # Set the format strings.
-        layout0 = f'{"img" if is_img2img else "txt"}2img_container0_aspect_ratio'
-        layout1 = f'{"img" if is_img2img else "txt"}2img_container1_aspect_ratio'
-        layout2 = f'{"img" if is_img2img else "txt"}2img_row_aspect_ratio'
+        layout0 = f'{"img" if is_img2img else "txt"}2img_container0_aspect_ratio_calc'
+        layout1 = f'{"img" if is_img2img else "txt"}2img_container1_aspect_ratio_calc'
+        layout2 = f'{"img" if is_img2img else "txt"}2img_row_aspect_ratio_calc'
         # Create a column.
         with gr.Column(elem_id=layout0):
             # Create an InputAccordion.
