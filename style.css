@@ -30,6 +30,7 @@
 	padding: 6px;
 }
 
+/* This block is required for the buttons. Do not delete! */
 #txt2img_row_aspect_ratio_calc button,
 #img2img_row_aspect_ratio_calc button {
 	margin: 0px;
