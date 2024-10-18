@@ -94,9 +94,9 @@ class AspectRatioScript(scripts.Script):
                         prec.input(update_prec, inputs=[prec], outputs=[prec])
                         mybutton0.click(update_number, inputs=[wentry, hentry], outputs=arvalue)
                         mybutton1.click(update_number, inputs=imgres, outputs=arvalue)
-                        def test(res):
-                            return [res]
-                        mybutton1.click(test, inputs=imgres, outputs=[wentry, hentry])
+                        def copy_fields(x, y):
+                            return [x, y]
+                        mybutton1.click(copy_fields, inputs=imgres, outputs=[wentry, hentry])
 
     # Class method after_component.
     def after_component(self, component, **kwargs):
