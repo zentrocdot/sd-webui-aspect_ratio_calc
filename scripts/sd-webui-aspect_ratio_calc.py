@@ -65,15 +65,15 @@ class AspectRatioCalcScript(scripts.Script):
 
     def ui(self, is_img2img):
         '''Class method ui.'''
-        # Set the format strings.
-        layout0 = f'{"img" if is_img2img else "txt"}2img_container0_aspect_ratio_calc'
-        layout1 = f'{"img" if is_img2img else "txt"}2img_container1_aspect_ratio_calc'
+        # Set the css format strings.
+        layout0 = f'{"img" if is_img2img else "txt"}2img_accordion_aspect_ratio_calc'
+        layout1 = f'{"img" if is_img2img else "txt"}2img_column_aspect_ratio_calc'
         layout2 = f'{"img" if is_img2img else "txt"}2img_row_aspect_ratio_calc'
         # Create a column.
-        with gr.Column(elem_id=layout0):
+        with gr.Column(elem_id=layout1):
             # Create an InputAccordion.
             with InputAccordion(label="Aspect Ratio Calculator",
-                elem_id=layout1, value=False
+                elem_id=layout0, value=False
             ) as enabled:
                 # Create a row.
                 with gr.Row(elem_id=layout2): 
