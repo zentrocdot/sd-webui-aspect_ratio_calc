@@ -96,7 +96,7 @@ class AspectRatioScript(scripts.Script):
                         mybutton1.click(update_number, inputs=imgres, outputs=arvalue)
                         def test(res):
                             return [res]
-                        mybutton1.click(update_number, inputs=imgres, outputs=[wentry, hentry])
+                        mybutton1.click(test, inputs=imgres, outputs=[wentry, hentry])
 
     # Class method after_component.
     def after_component(self, component, **kwargs):
