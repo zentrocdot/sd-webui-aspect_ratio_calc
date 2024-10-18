@@ -35,5 +35,6 @@
 #img2img_row_aspect_ratio_calc button {
 	margin: 0px;
 	gap: 10px !important;
+	width: 50px;
 	max-width: unset !important;
 }
