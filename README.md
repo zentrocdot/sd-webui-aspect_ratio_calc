@@ -15,6 +15,8 @@ After installation one will find a button panel within the web UI which looks li
 
 <a target="_blank" href=""><img src="./images/calculator.png" alt="button panel"></a>
 
+One can take over Width and Height from the web UI for the calculation. Alternatively one can put in arbirtray values for calculation.
+
 ## Development and Test Environment
 
 <p align="justify">The <i>Extension</i> was devolped and tested on a machine with a Debian based Linux distribution istalled using the web UI AUTOMATIC111 with following specification:</p>
