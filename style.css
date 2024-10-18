@@ -1,5 +1,7 @@
-#txt2img_container0_aspect_ratio_calc,
-#img2img_container0_aspect_ratio_calc {
+/* !important overwrites the gradio default settings. */
+
+#txt2img_accordion_aspect_ratio_calc,
+#img2img_accordion_aspect_ratio_calc {
 	gap: 10px !important;
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -8,14 +10,14 @@
 	padding: 6px;  
 }
 
-#txt2img_container1_aspect_ratio_calc,
-#img2img_container1_aspect_ratio_calc {
+#txt2img_column_aspect_ratio_calc,
+#img2img_column_aspect_ratio_calc {
 	gap: 10px !important;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	margin-left: 0px;
 	margin-right: 0px;
-	padding: 6px;  
+	padding: 0px;  
 }
 
 #txt2img_row_aspect_ratio_calc,
