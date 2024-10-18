@@ -20,6 +20,17 @@
 	padding: 0px;  
 }
 
+#txt2img_btn_aspect_ratio_calc,
+#img2img_btn_aspect_ratio_calc {
+	gap: 10px !important;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 50px;
+	padding: 0px;  
+}
+
 #txt2img_row_aspect_ratio_calc,
 #img2img_row_aspect_ratio_calc {
 	margin-right: 6px;
@@ -35,6 +46,5 @@
 #img2img_row_aspect_ratio_calc button {
 	margin: 0px;
 	gap: 10px !important;
-	width: 50px;
 	max-width: unset !important;
 }
