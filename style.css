@@ -11,10 +11,10 @@
 #txt2img_container1_aspect_ratio_calc,
 #img2img_container1_aspect_ratio_calc {
 	gap: 10px !important;
-	margin-top: 6px;
-	margin-bottom: 6px;
-	margin-left: 6px;
-	margin-right: 6px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
 	padding: 6px;  
 }
 
