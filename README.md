@@ -8,9 +8,24 @@ After installation one will find a button panel within the web UI which looks li
 
 <a target="_blank" href=""><img src="./images/calculator.png" alt="button panel"></a>
 
+## Development and Test Environment
+
+<p align="justify">The <i>Extension</i> was devolped and tested on a machine with a Debian based Linux distribution istalled using the web UI AUTOMATIC111 with following specification:</p>
+
+* API: v1.10.0
+* Python: 3.10.14
+* torch: 2.1.2+cu121
+* xformers: 0.0.23.post1
+* gradio: 3.41.2
+
 ## Points of Criticism AUTOMATIC1111
 
 <p align="justify">AUTOMATIC1111 uses Gradio to programme the web interface. The Gradio version used is extremely buggy and outdated. Currently my local installed version is 5.0.1, AUTOMATIC1111 is using version 3.41.2. In forum posts can be read that the outdated Gradio version is given priority over an adaptation or update. This does not really motivates to programme extensions.</p>
+
+<p align="justify">Even in the Python Virtual Environment, which AUTOMATIC1111 is using, the subsequent installation of Python modules is not unproblematic. There is often a mismatch in versions and dependencies. It must be clarified on a case-by-case basis how problematic the corresponding warning or error messages are. So far I have been able to solve every problem that has arisen.</p>
+
+
+<p align="justify">I am still looking for good documentation on how to integrate custom Extensions into AUTOMATIC1111. So far I have to resort to analysing other extensions and also having a look at Automatic's code. This is a very unsatisfactory approach.</p>
 
 # References
 
