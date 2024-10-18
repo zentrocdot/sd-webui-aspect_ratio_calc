@@ -82,7 +82,7 @@ class AspectRatioCalcScript(scripts.Script):
                         interactive=True, inputs=None, key="ARTextBox", label="",
                         info="Calculated aspect ratio from Width/Height"
                     )
-                    prec = gr.Dropdown([0,1,2,3,4,5,6,7,8], label="Precision", value="2")
+                    prec = gr.Dropdown([0,1,2,3,4,5,6,7,8], label="", info="Precision", value="2")
                 # Create a row.
                 with gr.Row(elem_id=layout2):
                     # Create two numeric fields and one button.
