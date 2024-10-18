@@ -93,19 +93,10 @@ class AspectRatioScript(scripts.Script):
                         imgres = self.image_resolution(is_img2img)
                         prec.input(update_prec, inputs=[prec], outputs=[prec])
                         mybutton0.click(update_number, inputs=[wentry, hentry], outputs=arvalue)
-                        #def update_number(x,y):
-                        #    if x > y:
-                        #        z = x/y
-                        #        if float(z).is_integer():
-                        #            z = int(z)                                 
-                        #        ret = str(z) + ":1"                   
-                        #    elif x <= y:
-                        #        z = y/x
-                        #        if float(z).is_integer():
-                        #            z = int(z)
-                        #        ret = "1:" + str(z)    
-                        #    return str(ret)
                         mybutton1.click(update_number, inputs=imgres, outputs=arvalue)
+                        def test(res):
+                            return [res]
+                        mybutton1.click(update_number, inputs=imgres, outputs=[wentry, hentry])
 
     # Class method after_component.
     def after_component(self, component, **kwargs):
