@@ -1,7 +1,7 @@
 '''sd-webui-aspect_ratio_calc
 Extension for AUTOMATIC1111.
 
-Version 0.0.0.2
+Version 0.0.0.3
 '''
 # pylint: disable=import-error
 # pylint: disable=consider-using-from-import
