@@ -1,5 +1,5 @@
-# sd-webui-aspect_ratio_calc Version 0.0.0.2 
-#### Extension for the AUTOMATIC1111 Web UI
+# sd-webui-aspect_ratio_calc
+#### :arrow_right: Extension for the AUTOMATIC1111 Web UI
 
 <p align="justify">sd-webui-aspect_ratio_calc is an <i>Extension</i> for the <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">AUTOMATIC1111</a>, which is adding the new functionality for the selection of predefined or user defined <i>aspect ratios</i> to the AUTOMATIC1111 web UI.</p>
 
